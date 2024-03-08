@@ -14,7 +14,7 @@ class _PlayerHomeState extends State<PlayerHome> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        return await showConfirmationDialogue(context) ?? false;
+        return await Alert.showConfirmationDialogue(context) ?? false;
       },
       child: renderBody(
         child: DefaultTabController(
@@ -32,45 +32,55 @@ class _PlayerHomeState extends State<PlayerHome> {
               },
             ),
             body: TabBarView(
-              children: [
-                nightlyEvents(context),
-                Container(
-                  color: Colors.transparent,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      pageDescription([
-                        customText(
-                          'Featured Events',
-                          AppStyles.MEDIUM,
-                        ),
-                        const Spacer(),
-                        customText(
-                          '',
-                          AppStyles.SUB_HEADING,
-                        ),
-                      ], EdgeInsets.symmetric(vertical: 15, horizontal: 20.w)),
-                      customText('Dracakis Tournament of Champions',
-                          AppStyles.HEADING),
-                      heightSpacer(20.h),
-                      Image.asset(
-                        ImagePath.FEATURED_EVENTS_IMAGE_1,
-                        width: AppWidgetsSize.NORMAL_CONTAINER * .9,
-                      ),
-                      heightSpacer(20.h),
-                      customText('National Finals', AppStyles.HEADING),
-                      heightSpacer(20.h),
-                      Image.asset(
-                        ImagePath.FEATURED_EVENTS_IMAGE_2,
-                        width: AppWidgetsSize.NORMAL_CONTAINER * .9,
-                      ),
-                    ],
-                  ),
-                )
-              ],
+              children: [nightlyEvents(context), featuredEvents()],
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Container featuredEvents() {
+    return Container(
+      color: Colors.transparent,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          pageDescription([
+            customText(
+              'Featured Events',
+              AppStyles.MEDIUM,
+            ),
+            const Spacer(),
+            customText(
+              '',
+              AppStyles.SUB_HEADING,
+            ),
+          ], EdgeInsets.symmetric(vertical: 15, horizontal: 20.w)),
+          customText('Dracakis Tournament of Champions', AppStyles.HEADING),
+          heightSpacer(20.h),
+          InkWell(
+            onTap: () {
+              PlayerScreens.FEATUREDEVENTDETAILS(context);
+            },
+            child: Image.asset(
+              ImagePath.FEATURED_EVENTS_IMAGE_1,
+              width: AppWidgetsSize.NORMAL_CONTAINER * .9,
+            ),
+          ),
+          heightSpacer(20.h),
+          customText('National Finals', AppStyles.HEADING),
+          heightSpacer(20.h),
+          InkWell(
+            onTap: () {
+              PlayerScreens.FEATUREDEVENTDETAILS(context);
+            },
+            child: Image.asset(
+              ImagePath.FEATURED_EVENTS_IMAGE_2,
+              width: AppWidgetsSize.NORMAL_CONTAINER * .9,
+            ),
+          ),
+        ],
       ),
     );
   }

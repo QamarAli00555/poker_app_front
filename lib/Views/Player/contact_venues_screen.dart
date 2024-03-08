@@ -14,7 +14,7 @@ class _ContactVenuesState extends State<ContactVenues> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        return await showConfirmationDialogue(context) ?? false;
+        return await Alert.showConfirmationDialogue(context) ?? false;
       },
       child: renderBody(
         child: Scaffold(

@@ -1,7 +1,15 @@
-// export.dart
+// ignore_for_file: deprecated_member_use
+export 'dart:convert';
+
 export 'package:flutter/material.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
+export 'package:flutter_spinkit/flutter_spinkit.dart';
+export 'package:http/http.dart';
+export 'package:provider/provider.dart';
+export 'package:shared_preferences/shared_preferences.dart';
 
+export '../../Controllers/Auth/login_notifier.dart';
+export '../../Controllers/Auth/signup_notifier.dart';
 export '../../Customs/colors/custom_colors.dart';
 export '../../Customs/image/custom_image.dart';
 export '../../Customs/image/paths.dart';
@@ -14,9 +22,13 @@ export '../../Customs/widgets/confirmation_dialogue.dart';
 export '../../Customs/widgets/dividers_methods.dart';
 export '../../Customs/widgets/gradiant_body_widget.dart';
 export '../../Customs/widgets/height_spacer.dart';
+export '../../Customs/widgets/loading_widget.dart';
 export '../../Customs/widgets/page_description.dart';
 export '../../Customs/widgets/text_widget.dart';
 export '../../Customs/widgets/width_spacer.dart';
+export '../../Models/Auth/user.dart';
+export '../../Services/Auth/signup_api.dart';
+export '../../Utils/api_urls.dart';
 export '../../Utils/enums.dart';
 export '../../Views/Auth/login_screen.dart';
 export '../../Views/Auth/signup_screen.dart';
@@ -24,6 +36,7 @@ export '../../Views/Player/ambassador.dart';
 export '../../Views/Player/contact_players_screen.dart';
 export '../../Views/Player/contact_venues_screen.dart';
 export '../../Views/Player/drawer_screen.dart';
+export '../../Views/Player/featured_event_details.dart';
 export '../../Views/Player/home_screen.dart';
 export '../../Views/Player/nightly_event_details_screen.dart';
 export '../../Views/Player/partner_screen.dart';

@@ -9,7 +9,7 @@ class NightlyEventDetails extends StatelessWidget {
     // ignore: deprecated_member_use
     return WillPopScope(
       onWillPop: () async {
-        return await showConfirmationDialogue(context) ?? false;
+        return await Alert.showConfirmationDialogue(context) ?? false;
       },
       child: renderBody(
         child: Scaffold(

@@ -1,12 +1,15 @@
 import '../routes/imports.dart';
 
-Widget customTextBox(final String hintText, final TextInputType keyboardType,
-    final TextEditingController controller,
-    {Widget? prefix,
-    Widget? suffix,
-    bool isPass = false,
-    int lines = 1,
-    bool isProfile = false}) {
+Widget customTextBox(
+  final String hintText,
+  final TextInputType keyboardType,
+  TextEditingController controller, {
+  Widget? prefix,
+  Widget? suffix,
+  bool isPass = false,
+  int lines = 1,
+  bool isProfile = false,
+}) {
   return LayoutBuilder(
     builder: (BuildContext context, BoxConstraints constraints) {
       return Container(

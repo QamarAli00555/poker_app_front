@@ -1,14 +1,13 @@
 // ignore_for_file: non_constant_identifier_names, constant_identifier_n, constant_identifier_names
-
-
 import '../routes/imports.dart';
 
 class PlayerScreens {
   static const Widget _HOME = PlayerHome();
   static final Widget _NIGHTLY_EVENT_DETAILS = NightlyEventDetails();
+  static final Widget _SPONSORS = Sponsors();
   static const Widget _CONTACTVENUES = ContactVenues();
   static const Widget _CONTACTPLAYERS = ContactPlayers();
-  static final Widget _SPONSORS = Sponsors();
+  static final Widget _FEATURED_EVENT_DETAILS = FeaturedEventDetails();
   static const Widget _PARTNERS = Partners();
   static const Widget _RULES = Rules();
   static final Widget _AMBASSADOR = Ambassador();
@@ -34,6 +33,10 @@ class PlayerScreens {
 
   static CONTACTPLAYERS(BuildContext context) {
     navigateToScreen(_CONTACTPLAYERS, context);
+  }
+
+  static FEATUREDEVENTDETAILS(BuildContext context) {
+    navigateToScreen(_FEATURED_EVENT_DETAILS, context);
   }
 
   static PARTNERS(BuildContext context) {

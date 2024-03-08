@@ -8,10 +8,10 @@ AppBar renderAppbar(
     automaticallyImplyLeading: false,
     centerTitle: true,
     leading: revT == null
-        ? InkWell(
-            onTap: leading,
-            child: Padding(
-              padding: const EdgeInsets.all(12.0),
+        ? Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: InkWell(
+              onTap: leading,
               child: Image.asset(
                 ImagePath.MENU_IMG,
                 fit: BoxFit.cover,

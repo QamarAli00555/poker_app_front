@@ -6,7 +6,7 @@ Widget renderBody({required Widget child}) {
     height: double.infinity.h,
     decoration: const BoxDecoration(
       gradient: LinearGradient(
-        colors: [Color(0xFF052038), Color(0xFF0E669E)],
+        colors: [AppColors.GRADIANT_1, AppColors.GRADIANT_2],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       ),

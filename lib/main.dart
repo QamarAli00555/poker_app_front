@@ -1,7 +1,14 @@
+import 'package:pokernation_app/Views/Auth/splash_view.dart';
+
 import './Customs/routes/imports.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context) => LoginNotifier()),
+    ChangeNotifierProvider(create: (context) => SignupNotifier()),
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
             scaffoldBackgroundColor: Colors.transparent),
-        home: const PlayerHome(),
+        home: const SplashScreen(),
       ),
     );
   }
