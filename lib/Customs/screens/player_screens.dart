@@ -2,6 +2,7 @@
 import '../routes/imports.dart';
 
 class PlayerScreens {
+  
   static const Widget _HOME = PlayerHome();
   static final Widget _NIGHTLY_EVENT_DETAILS = NightlyEventDetails();
   static final Widget _SPONSORS = Sponsors();
