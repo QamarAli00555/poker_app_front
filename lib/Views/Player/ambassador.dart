@@ -1,4 +1,3 @@
-
 import '../../Customs/routes/imports.dart';
 
 class Ambassador extends StatelessWidget {
@@ -7,14 +6,13 @@ class Ambassador extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-    // ignore: deprecated_member_use
-    return WillPopScope(
-      onWillPop: () async {
+    return PopScope(
+      onPopInvoked: (bool v) async {
         return await Alert.showConfirmationDialogue(context) ?? false;
       },
       child: renderBody(
         child: Scaffold(
-          drawer: myDrawer(context),
+          drawer: playerDrawer(context),
           key: scaffoldKey,
           appBar: renderAppbar(
             revT: true,

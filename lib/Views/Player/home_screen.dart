@@ -20,7 +20,7 @@ class _PlayerHomeState extends State<PlayerHome> {
         child: DefaultTabController(
           length: 2,
           child: Scaffold(
-            drawer: myDrawer(context),
+            drawer: playerDrawer(context),
             key: scaffoldKey,
             appBar: renderAppbar(
               tabBar: true,

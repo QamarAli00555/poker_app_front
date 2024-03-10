@@ -1,5 +1,3 @@
-import 'package:pokernation_app/Views/Auth/splash_view.dart';
-
 import './Customs/routes/imports.dart';
 
 void main() async {
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
             scaffoldBackgroundColor: Colors.transparent),
-        home: const SplashScreen(),
+        home: CreateEvents(),
       ),
     );
   }

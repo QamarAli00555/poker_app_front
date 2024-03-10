@@ -1,25 +1,25 @@
 import '../routes/imports.dart';
 
-Widget customTextBox(
-  final String hintText,
-  final TextInputType keyboardType,
-  TextEditingController controller, {
-  Widget? prefix,
-  Widget? suffix,
-  bool isPass = false,
-  int lines = 1,
-  bool isProfile = false,
-}) {
+Widget customTextBox(final String hintText, final TextInputType keyboardType,
+    TextEditingController controller,
+    {Widget? prefix,
+    Widget? suffix,
+    bool isPass = false,
+    int lines = 1,
+    double height = 300,
+    bool isProfile = false,
+    Function(String)? onChanged}) {
   return LayoutBuilder(
     builder: (BuildContext context, BoxConstraints constraints) {
       return Container(
         width: AppWidgetsSize.TEXTFIELD,
         alignment: Alignment.center,
         margin: EdgeInsetsDirectional.symmetric(vertical: 10.h),
-        height: lines == 1 ? 50.h : 300.h,
+        height: lines == 1 ? 50.h : height.h,
         child: TextFormField(
           controller: controller,
           keyboardType: keyboardType,
+          onChanged: onChanged,
           textAlignVertical: TextAlignVertical.bottom,
           style: TextStyle(
               fontSize: AppFontSizes.PLACEHOLDER,
@@ -31,7 +31,8 @@ Widget customTextBox(
             prefix: prefix,
             hintText: hintText,
             filled: true,
-            fillColor: isProfile ? const Color(0xFF062337) : Colors.white,
+            fillColor:
+                isProfile ? AppColors.FILL_COLOR : AppColors.PRIMARY_WHITE,
             border: OutlineInputBorder(
               borderSide: BorderSide(
                 color: isProfile

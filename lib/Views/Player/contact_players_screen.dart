@@ -18,7 +18,7 @@ class _ContactPlayersState extends State<ContactPlayers> {
       },
       child: renderBody(
         child: Scaffold(
-          drawer: myDrawer(context),
+          drawer: playerDrawer(context),
           key: scaffoldKey,
           appBar: renderAppbar(
             revT: true,

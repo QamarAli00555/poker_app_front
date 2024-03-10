@@ -43,7 +43,7 @@ Widget customText(String text, Enum style,
       return Text(
         text,
         style: TextStyle(
-                fontSize: size,
+                fontSize: size ?? 0.sp,
                 fontWeight: isBold != null ? FontWeight.bold : fontWeight,
                 color: color,
                 letterSpacing: isTitle ? 2 : null,

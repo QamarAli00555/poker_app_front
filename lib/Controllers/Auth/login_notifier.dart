@@ -37,7 +37,7 @@ class LoginNotifier extends ChangeNotifier {
   }
 
   Future<void> saveUserInfo(UserInfo userInfo) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setString('login_user', jsonEncode(userInfo.toJson()));
+    // final SharedPreferences prefs = await SharedPreferences.getInstance();
+    // await prefs.setString('login_user', jsonEncode(userInfo.toJson()));
   }
 }

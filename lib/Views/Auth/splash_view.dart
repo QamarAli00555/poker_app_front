@@ -18,9 +18,8 @@ class SplashScreen extends StatelessWidget {
             navigateToScreen(const SignupScreen(), context);
           }),
           heightSpacer(15.h),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               customText('Have Account?', AppStyles.MEDIUM,
                   color: AppColors.PRIMARY_WHITE),

@@ -7,13 +7,15 @@ class Sponsors extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: deprecated_member_use
+
+    ScreenUtil.init(context, designSize: const Size(360, 690));
     return WillPopScope(
       onWillPop: () async {
         return await Alert.showConfirmationDialogue(context) ?? false;
       },
       child: renderBody(
         child: Scaffold(
-          drawer: myDrawer(context),
+          drawer: playerDrawer(context),
           key: scaffoldKey,
           appBar: renderAppbar(
             revT: true,

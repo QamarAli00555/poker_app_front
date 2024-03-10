@@ -13,7 +13,7 @@ class NightlyEventDetails extends StatelessWidget {
       },
       child: renderBody(
         child: Scaffold(
-          drawer: myDrawer(context),
+          drawer: playerDrawer(context),
           key: scaffoldKey,
           appBar: renderAppbar(
             revT: true,

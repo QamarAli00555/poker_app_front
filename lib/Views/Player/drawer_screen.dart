@@ -1,6 +1,6 @@
 import '../../Customs/routes/imports.dart';
 
-Drawer myDrawer(BuildContext context) {
+Drawer playerDrawer(BuildContext context) {
   Widget subItem(String text, Function() onTap) {
     return ListTile(
       title: Text(

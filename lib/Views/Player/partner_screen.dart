@@ -11,7 +11,7 @@ class Partners extends StatelessWidget {
       },
       child: renderBody(
         child: Scaffold(
-          drawer: myDrawer(context),
+          drawer: playerDrawer(context),
           appBar: renderAppbar(
             revT: true,
             leading: () {
@@ -32,6 +32,11 @@ class Partners extends StatelessWidget {
                   children: [
                     heightSpacer(40.h),
                     customText('Our Partners', AppStyles.HEADING),
+                    // Text(
+                    //   'Our Partners',
+                    //   style: TextStyle(
+                    //       color: AppColors.PRIMARY_GOLD, fontSize: 16.sp),
+                    // ),
                     heightSpacer(20.h),
                     const CircleAvatar(
                       radius: 75,

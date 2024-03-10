@@ -3,18 +3,18 @@
 import '../../Customs/routes/imports.dart';
 
 class AppFontSizes {
-  static const double HEADING = 22;
-  static const double SUB_HEADING = 20;
-  static const double DESCRIPTION = 18;
-  static const double LARGE = 16;
-  static const double MEDIUM = 14;
-  static const double SMALL = 13;
-  static const double PLACEHOLDER = 14;
+  static double HEADING = 16;
+  static double SUB_HEADING = 20;
+  static double DESCRIPTION = 18;
+  static double LARGE = 16;
+  static double MEDIUM = 14;
+  static double SMALL = 13;
+  static double PLACEHOLDER = 14;
 }
 
 class AppWidgetsSize {
   static double NORMAL_CONTAINER = 350;
-  static double TEXTFIELD = 300;
+  static double TEXTFIELD = 350;
   static double BUTTON = 150;
   static double TILE_WIDTH = 350;
 }

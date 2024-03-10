@@ -9,7 +9,7 @@ class Alert {
           Icons.question_mark,
           color: AppColors.PRIMARY_BLACK,
         ),
-        title: const Text(
+        title: Text(
           'Confirmation',
           style: TextStyle(fontSize: AppFontSizes.DESCRIPTION),
         ),
@@ -39,7 +39,10 @@ class Alert {
       context: context,
       builder: (context) => Column(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: [customText(message, AppStyles.SMALL,color: AppColors.RED), heightSpacer(30.h)],
+        children: [
+          customText(message, AppStyles.SMALL, color: AppColors.RED),
+          heightSpacer(30.h)
+        ],
       ),
     );
   }

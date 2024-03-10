@@ -11,7 +11,7 @@ class Rules extends StatelessWidget {
       },
       child: renderBody(
         child: Scaffold(
-          drawer: myDrawer(context),
+          drawer: playerDrawer(context),
           appBar: renderAppbar(
             revT: true,
             leading: () {

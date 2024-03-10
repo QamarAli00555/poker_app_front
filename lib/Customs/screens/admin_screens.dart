@@ -4,8 +4,7 @@ import '../routes/imports.dart';
 
 class AdminScreens {
   static const Widget _ALL_EVENTS = AllEvents();
-  static const Widget _CREATE_NIGHTLY_EVENT = CreateNightlyEvents();
-  static const Widget _CREATE_FEATURED_EVENT = CreateFeaturedEvents();
+  static final Widget _CREATE_NIGHTLY_EVENT = CreateEvents();
   static const Widget _ADD_SPONSORS = AddSponsors();
   static const Widget _ADD_RULES_PARTNERS = AddRulesAndPartners();
   static const Widget _ADD_WHO_WE_ARE = AddWhoWeAre();
@@ -15,13 +14,10 @@ class AdminScreens {
     navigateToScreen(_ALL_EVENTS, context);
   }
 
-  static CREATENIGHTLYEVENTS(BuildContext context) {
+  static CREATEEVENTS(BuildContext context) {
     navigateToScreen(_CREATE_NIGHTLY_EVENT, context);
   }
 
-  static CREATEFEATUREDEVENTS(BuildContext context) {
-    navigateToScreen(_CREATE_FEATURED_EVENT, context);
-  }
 
   static ADDSPONSORS(BuildContext context) {
     navigateToScreen(_ADD_SPONSORS, context);
@@ -35,7 +31,7 @@ class AdminScreens {
     navigateToScreen(_ADD_WHO_WE_ARE, context);
   }
 
-  static PLAYERLOGOUT(BuildContext context) {
+  static ADMINLOGOUT(BuildContext context) {
     navigateToScreen(_LOGOUT, context);
   }
 
