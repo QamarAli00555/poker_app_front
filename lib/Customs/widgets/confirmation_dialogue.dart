@@ -1,4 +1,11 @@
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../Utils/enums.dart';
+import '../colors/custom_colors.dart';
+import '../styles/font_sizes.dart';
+import 'height_spacer.dart';
+import 'text_widget.dart';
 
 class Alert {
   static Future<dynamic> showConfirmationDialogue(BuildContext context) {

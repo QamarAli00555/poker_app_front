@@ -1,4 +1,8 @@
-import '../routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../colors/custom_colors.dart';
+import '../styles/font_sizes.dart';
 
 Widget customTextBox(final String hintText, final TextInputType keyboardType,
     TextEditingController controller,

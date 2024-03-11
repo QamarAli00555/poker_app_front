@@ -1,4 +1,9 @@
-import '../routes/imports.dart';
+import 'package:flutter/material.dart';
+
+import '../../Utils/enums.dart';
+import '../colors/custom_colors.dart';
+import '../image/paths.dart';
+import 'text_widget.dart';
 
 AppBar renderAppbar(
     {Function()? leading, Function()? trailing, bool? tabBar, bool? revT}) {

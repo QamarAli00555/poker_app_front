@@ -1,6 +1,11 @@
 // ignore_for_file: must_be_immutable
 
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../Utils/enums.dart';
+import '../colors/custom_colors.dart';
+import '../styles/font_sizes.dart';
 
 Widget customText(String text, Enum style,
     {Color? color = AppColors.PRIMARY_WHITE,

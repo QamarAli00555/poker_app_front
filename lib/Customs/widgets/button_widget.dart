@@ -1,4 +1,10 @@
-import '../routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../Utils/enums.dart';
+import '../colors/custom_colors.dart';
+import '../styles/font_sizes.dart';
+import 'text_widget.dart';
 
 Widget customButton(final String text, final Function() onpress) {
   return InkWell(

@@ -1,6 +1,10 @@
 // ignore_for_file: avoid_print, use_build_context_synchronously
 
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+
+import '../../Customs/screens/player_screens.dart';
+import '../../Customs/widgets/loading_widget.dart';
+import '../../Models/Auth/user.dart';
 import '../../Services/Auth/login_api.dart';
 
 class LoginNotifier extends ChangeNotifier {

@@ -1,4 +1,7 @@
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../colors/custom_colors.dart';
 
 Widget renderBody({required Widget child}) {
   return Container(

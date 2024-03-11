@@ -1,4 +1,6 @@
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+
+import '../colors/custom_colors.dart';
 
 Divider goldDivider() {
   return const Divider(

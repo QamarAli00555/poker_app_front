@@ -1,4 +1,7 @@
-import '../routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+import '../colors/custom_colors.dart';
 
 class LoadingPopup {
   static void show(BuildContext context, bool isLoading) {

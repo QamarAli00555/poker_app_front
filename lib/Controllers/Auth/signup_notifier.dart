@@ -1,6 +1,13 @@
 // ignore_for_file: avoid_print, use_build_context_synchronously
 
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/widgets.dart';
+
+import '../../Customs/routes/navigations.dart';
+import '../../Customs/screens/player_screens.dart';
+import '../../Customs/widgets/loading_widget.dart';
+import '../../Models/Auth/user.dart';
+import '../../Services/Auth/signup_api.dart';
+import '../../Views/Auth/login_screen.dart';
 
 class SignupNotifier extends ChangeNotifier {
   final _formKey = GlobalKey<FormState>();
