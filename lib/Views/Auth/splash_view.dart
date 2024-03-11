@@ -1,4 +1,17 @@
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../Customs/colors/custom_colors.dart';
+import '../../Customs/image/custom_image.dart';
+import '../../Customs/routes/navigations.dart';
+import '../../Customs/widgets/button_widget.dart';
+import '../../Customs/widgets/gradiant_body_widget.dart';
+import '../../Customs/widgets/height_spacer.dart';
+import '../../Customs/widgets/text_widget.dart';
+import '../../Customs/widgets/width_spacer.dart';
+import '../../Utils/enums.dart';
+import 'login_screen.dart';
+import 'signup_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

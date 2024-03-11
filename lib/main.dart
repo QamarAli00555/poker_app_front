@@ -1,4 +1,18 @@
-import './Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
+
+import '../../Customs/colors/custom_colors.dart';
+import '../../Customs/widgets/appbar_widget.dart';
+import '../../Customs/widgets/gradiant_body_widget.dart';
+import '../../Customs/widgets/text_widget.dart';
+import '../../Utils/enums.dart';
+import 'Controllers/Auth/login_notifier.dart';
+import 'Controllers/Auth/signup_notifier.dart';
+import 'Customs/image/custom_image.dart';
+import 'Customs/widgets/button_widget.dart';
+import 'Customs/widgets/textbox_widget.dart';
+import 'Views/Admin/create_events_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +37,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
             scaffoldBackgroundColor: Colors.transparent),
-        home: CreateEvents(),
+        home: const CreateEvents(),
       ),
     );
   }

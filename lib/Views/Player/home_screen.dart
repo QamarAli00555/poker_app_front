@@ -1,7 +1,22 @@
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../Customs/colors/custom_colors.dart';
+import '../../Customs/image/paths.dart';
+import '../../Customs/screens/player_screens.dart';
+import '../../Customs/styles/font_sizes.dart';
+import '../../Customs/widgets/appbar_widget.dart';
+import '../../Customs/widgets/confirmation_dialogue.dart';
+import '../../Customs/widgets/gradiant_body_widget.dart';
+import '../../Customs/widgets/height_spacer.dart';
+import '../../Customs/widgets/page_description.dart';
+import '../../Customs/widgets/text_widget.dart';
+import '../../Customs/widgets/width_spacer.dart';
+import '../../Utils/enums.dart';
+import 'drawer_screen.dart';
 
 class PlayerHome extends StatefulWidget {
-  const PlayerHome({Key? key}) : super(key: key);
+  const PlayerHome({super.key});
 
   @override
   State<PlayerHome> createState() => _PlayerHomeState();

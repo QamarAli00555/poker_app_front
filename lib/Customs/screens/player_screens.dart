@@ -1,8 +1,22 @@
 // ignore_for_file: non_constant_identifier_names, constant_identifier_n, constant_identifier_names
-import '../routes/imports.dart';
+
+import 'package:flutter/material.dart';
+
+import '../../Views/Auth/login_screen.dart';
+import '../../Views/Player/ambassador.dart';
+import '../../Views/Player/contact_players_screen.dart';
+import '../../Views/Player/contact_venues_screen.dart';
+import '../../Views/Player/featured_event_details.dart';
+import '../../Views/Player/home_screen.dart';
+import '../../Views/Player/nightly_event_details_screen.dart';
+import '../../Views/Player/partner_screen.dart';
+import '../../Views/Player/profile_screen.dart';
+import '../../Views/Player/rules_screen.dart';
+import '../../Views/Player/sponsors_screen.dart';
+import '../../Views/Player/who_we_are_screen.dart';
+import '../routes/navigations.dart';
 
 class PlayerScreens {
-  
   static const Widget _HOME = PlayerHome();
   static final Widget _NIGHTLY_EVENT_DETAILS = NightlyEventDetails();
   static final Widget _SPONSORS = Sponsors();

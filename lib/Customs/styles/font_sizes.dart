@@ -1,6 +1,6 @@
 // ignore_for_file: constant_identifier_names, non_constant_identifier_names
 
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
 
 class AppFontSizes {
   static double HEADING = 16;

@@ -1,4 +1,9 @@
-import '../../Customs/routes/imports.dart';
+import 'package:flutter/material.dart';
+
+import '../../Customs/colors/custom_colors.dart';
+import '../../Customs/image/paths.dart';
+import '../../Customs/screens/player_screens.dart';
+import '../../Customs/widgets/height_spacer.dart';
 
 Drawer playerDrawer(BuildContext context) {
   Widget subItem(String text, Function() onTap) {

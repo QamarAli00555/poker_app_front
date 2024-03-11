@@ -1,4 +1,9 @@
-import '../../Customs/routes/imports.dart';
+import 'dart:convert';
+
+import 'package:http/http.dart';
+
+import '../../Models/Auth/user.dart';
+import '../../Utils/api_urls.dart';
 
 class SignupApi {
   static const String baseUrl = ApiURL.SIGNUP;
